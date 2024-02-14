@@ -3,6 +3,11 @@ import Accelerate
 
 // MARK: - Help Entities
 
+enum MatrixError: Error {
+    
+    case notHaveSolution
+}
+
 class Matrix {
     
     var upperDiag: [Double]
@@ -26,10 +31,27 @@ class Matrix {
         return result
     }
     
-    init(upperDiag: [Double], centerDiag: [Double], lowerDiag: [Double]) {
+    init(upperDiag: [Double], centerDiag: [Double], lowerDiag: [Double]) throws {
         self.upperDiag = upperDiag
         self.centerDiag = centerDiag
         self.lowerDiag = lowerDiag
+        
+        if !Matrix.check(upperDiag: upperDiag, centerDiag: centerDiag, lowerDiag: lowerDiag) {
+            throw MatrixError.notHaveSolution
+        }
+    }
+    
+    static func check(upperDiag: [Double], centerDiag: [Double], lowerDiag: [Double]) -> Bool {
+        var result: Bool = true
+        let n = centerDiag.count
+        
+        for i in 1...n-2 {
+            result = result && (abs(centerDiag[i]) >= abs(lowerDiag[i - 1] + upperDiag[i]))
+            result = result && (abs(upperDiag[i]) <= abs(centerDiag[i]))
+            result = result && (abs(lowerDiag[i - 1]) <= abs(upperDiag[i]))
+        }
+        
+        return result
     }
     
     subscript(row: Int, col: Int) -> Double {
@@ -108,7 +130,7 @@ func substractionOf(vector1: [Double], vector2: [Double]) -> [Double] {
 
 // MARK: - Метод прогонки для решения СЛАУ (с трехдиагональной матрицей)
 
-var matrixA: Matrix = .init(upperDiag: [1, 1, 1], centerDiag: [4, 4, 4, 4], lowerDiag: [1, 1, 1])
+var matrixA: Matrix = try .init(upperDiag: [1, 1, 1], centerDiag: [4, 4, 4, 4], lowerDiag: [1, 1, 1])
 //matrixA *= 1.0/3.0
 
 let vectorB: [Double] = [2, 4, 6.0 + 2.0 / 3.0, 9] // [5, 6, 6, 5]
