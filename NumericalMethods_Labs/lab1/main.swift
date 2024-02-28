@@ -1,174 +1,82 @@
 import Foundation
-import Accelerate
 
-// MARK: - Help Entities
-
-enum MatrixError: Error {
-    
-    case notHaveSolution
+func y(x: Double) -> Double {
+    return x * sin(x) * sin(x)
 }
 
-class Matrix {
-    
-    var upperDiag: [Double]
-    var centerDiag: [Double]
-    var lowerDiag: [Double]
-    
-    var size: Int {
-        centerDiag.count
-    }
-    
-    var full: [[Double]] {
-        var result: [[Double]] = Array(repeating: Array(repeating: 0, count: size), count: size)
-        for i in 0..<(size - 1) {
-            result[i][i] = centerDiag[i]
-            result[i][i + 1] = upperDiag[i]
-            result[i + 1][i] = lowerDiag[i]
-        }
-        
-        result[size - 1][size - 1] = centerDiag[size - 1]
-        
-        return result
-    }
-    
-    init(upperDiag: [Double], centerDiag: [Double], lowerDiag: [Double]) throws {
-        self.upperDiag = upperDiag
-        self.centerDiag = centerDiag
-        self.lowerDiag = lowerDiag
-        
-        if !Matrix.check(upperDiag: upperDiag, centerDiag: centerDiag, lowerDiag: lowerDiag) {
-            throw MatrixError.notHaveSolution
-        }
-    }
-    
-    static func check(upperDiag: [Double], centerDiag: [Double], lowerDiag: [Double]) -> Bool {
-        var result: Bool = true
-        let n = centerDiag.count
-        
-        for i in 1...n-2 {
-            result = result && (abs(centerDiag[i]) >= abs(lowerDiag[i - 1] + upperDiag[i]))
-            result = result && (abs(upperDiag[i]) <= abs(centerDiag[i]))
-            result = result && (abs(lowerDiag[i - 1]) <= abs(upperDiag[i]))
-        }
-        
-        return result
-    }
-    
-    subscript(row: Int, col: Int) -> Double {
-        guard abs(row - col) <= 1 else {
-            return 0
-        }
-        
-        if row == col {
-            return centerDiag[row]
-        } else if row > col {
-            return lowerDiag[row - 1]
-        } else {
-            return upperDiag[col - 1]
-        }
-    }
-}
+let a: Double = 0
+let b: Double = .pi
 
-extension Matrix {
-    
-    static func *= (matrix: inout Matrix, scalar: Double) {
-        for i in 0..<matrix.centerDiag.count {
-            matrix.centerDiag[i] *= scalar
-        }
-        
-        for i in 0..<matrix.upperDiag.count {
-            matrix.upperDiag[i] *= scalar
-        }
-        
-        for i in 0..<matrix.lowerDiag.count {
-            matrix.lowerDiag[i] *= scalar
-        }
-    }
-}
+let n: Int = 10
+let h: Double = (b - a) / Double(n)
 
-// MARK: - Help Functions
-
-func invert(matrix : [[Double]], size: Int) -> [[Double]] {
-    var inMatrix = matrix.flatMap { $0 }
-    var N = __CLPK_integer(sqrt(Double(size)))
-    var pivots = [__CLPK_integer](repeating: 0, count: Int(N))
-    var workspace = [Double](repeating: 0.0, count: Int(N))
-    var error : __CLPK_integer = 0
-
-    withUnsafeMutablePointer(to: &N) {
-        dgetrf_($0, $0, &inMatrix, $0, &pivots, &error)
-        dgetri_($0, &inMatrix, $0, &pivots, &workspace, $0, &error)
-    }
-    return stride(from: 0, to: inMatrix.count, by: size).map {
-        Array(inMatrix[$0..<$0 + size])
-    }
-}
-
-func multiplyOf(matrix: [[Double]], vector: [Double]) -> [Double] {
-    var result: [Double] = Array(repeating: 0, count: vector.count)
-    (0..<matrix.count).forEach { index in
-        result[index] = multiplyOf(vector1: matrix[index], vector2: vector)
-    }
-    
-    return result
-}
-
-func multiplyOf(vector1: [Double], vector2: [Double]) -> Double {
-    var result: Double = 0
-    (0..<vector1.count).forEach { index in
-        result += vector1[index] * vector2[index]
-    }
-    
-    return result
-}
-
-func substractionOf(vector1: [Double], vector2: [Double]) -> [Double] {
-    return (0..<vector1.count).map { index in
-        vector1[index] - vector2[index]
-    }
-}
-
-// MARK: - Метод прогонки для решения СЛАУ (с трехдиагональной матрицей)
-
-var matrixA: Matrix = try .init(upperDiag: [1, 1, 1], centerDiag: [4, 4, 4, 4], lowerDiag: [1, 1, 1])
-//matrixA *= 1.0/3.0
-
-let vectorB: [Double] = [2, 4, 6.0 + 2.0 / 3.0, 9] // [5, 6, 6, 5]
-
-let n = matrixA.size
+let matrix: Matrix = .init(upperDiag: Array(repeating: 1, count: n + 1),
+                           centerDiag: Array(repeating: 4, count: n + 1),
+                           lowerDiag: Array(repeating: 1, count: n + 1))
+let xArray: [Double] = (0...n).map { a + Double($0) * h }
+let yArray: [Double] = (0...n).map { y(x: xArray[$0]) }
+let vector = yArray
 
 // MARK: - Формирование прогочных коэф-тов
 
-var alpha: [Double] = Array(repeating: 0, count: n)
-var betta: [Double] = Array(repeating: 0, count: n)
+var alpha: [Double] = Array(repeating: 0, count: n + 1)
+var betta: [Double] = Array(repeating: 0, count: n + 1)
 
-alpha[0] = vectorB[0] / matrixA[0, 0]
-betta[0] = -matrixA[0, 1] / matrixA[0, 0]
+alpha[0] = vector[0] / matrix[0, 0]
+betta[0] = -matrix[0, 1] / matrix[0, 0]
 
 for i in 1...(n - 1) {
-    let divider: Double = (matrixA[i, i - 1] * betta[i - 1] + matrixA[i, i])
-    alpha[i] = (vectorB[i] - matrixA[i, i - 1] * alpha[i - 1]) / divider
-    betta[i] = i == n - 1 ? 0 : -matrixA[i, i + 1] / divider
+    let divider: Double = (matrix[i, i - 1] * betta[i - 1] + matrix[i, i])
+    alpha[i] = (vector[i] - matrix[i, i - 1] * alpha[i - 1]) / divider
+    betta[i] = i == n ? 0 : -matrix[i, i + 1] / divider
 }
+
+print(alpha)
+print(betta)
 
 // MARK: - Вычисление корней
 
-var vectorX: [Double] = Array(repeating: 0, count: n)
+var cArray: [Double] = Array(repeating: 0, count: n + 1)
 
-vectorX[n - 1] = alpha[n - 1]
+cArray[n] = alpha[n]
 
-for i in stride(from: n - 2, to: -1, by: -1) {
-    vectorX[i] = alpha[i] + betta[i] * vectorX[i + 1]
+for i in stride(from: n - 1, to: 0, by: -1) {
+    cArray[i] = alpha[i] + betta[i] * cArray[i + 1]
 }
 
-let newVectorB = multiplyOf(matrix: matrixA.full, vector: vectorX)
-let diff = substractionOf(vector1: newVectorB, vector2: vectorB)
+var aArray: [Double] = yArray
+var bArray: [Double] = Array(repeating: 0, count: n + 1)
+var dArray: [Double] = Array(repeating: 0, count: n + 1)
 
-let invertedMatrixA = invert(matrix: matrixA.full, size: n)
-let offset = multiplyOf(matrix: invertedMatrixA, vector: diff)
+for i in 0...(n - 1) {
+    bArray[i] = (vector[i + 1] - vector[i]) / h - h * (cArray[i + 1] - cArray[i]) / 3
+    dArray[i] = (cArray[i + 1] - cArray[i]) / (3 * h)
+}
 
-let correctVectorX = substractionOf(vector1: vectorX, vector2: offset)
+// MARK: - Вычисление сплайнов
 
-print(offset)
-print(correctVectorX)
+var splines: [Spline] = (0...n - 1).map { i in
+        .init(a: aArray[i], b: bArray[i], c: cArray[i], d: dArray[i], range: (xArray[i]...xArray[i + 1]))
+}
+
+for i in 1...n {
+    let x = a + (Double(i) - 0.5) * h
+    guard let splineValue = splines[i - 1].value(by: x) else {
+        fatalError("spline range doesn't contain value: \(x)")
+    }
+    let originalValue = y(x: x)
+    let diff = abs(splineValue - originalValue)
+    
+    print(
+        NSString(format: "%.5f", x),
+        NSString(format: "%.5f", splineValue),
+        NSString(format: "%.5f", originalValue),
+        NSString(format: "%.5f", diff)
+    )
+}
+
+let value = 0.5
+print(splines.compactMap { $0.value(by: value) })
+
+
 
