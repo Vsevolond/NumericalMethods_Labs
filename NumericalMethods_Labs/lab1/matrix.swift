@@ -31,7 +31,7 @@ class Matrix {
     }
     
     subscript(row: Int, col: Int) -> Double {
-        guard abs(row - col) <= 1 else {
+        guard abs(row - col) <= 1, row >= 0, col < centerDiag.count else {
             return 0
         }
         
