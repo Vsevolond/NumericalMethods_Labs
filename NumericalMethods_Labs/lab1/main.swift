@@ -73,10 +73,11 @@ for i in 1...n {
     let diffNode = abs(splineNodeValue - originalNodeValue)
     
     print(
-        NSString(format: "%.5f", x),
+        NSString(format: "%.5f", x - 0.5 * h),
         NSString(format: "%.5f", splineValue),
         NSString(format: "%.5f", originalValue),
         NSString(format: "%.5f", diff),
+        NSString(format: "%.5f", x),
         NSString(format: "%.5f", splineNodeValue),
         NSString(format: "%.5f", originalNodeValue),
         NSString(format: "%.5f", diffNode)
