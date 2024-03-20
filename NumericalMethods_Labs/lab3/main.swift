@@ -124,7 +124,7 @@ let inaccuracy = variance / sqrtf(Float(n))
 let error = inaccuracy / sqrtf(yArray.map { $0.pow(2) }.sum())
 var middleValues = xArray.pairs().map { polynom.value(by: ($0 + $1) / 2) }
 
-print("Мтарица A:")
+print("Матрица A:")
 for row in matrixA {
     print(row)
 }
