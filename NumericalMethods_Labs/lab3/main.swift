@@ -120,7 +120,7 @@ var variance = sqrtf(xArray.enumerated().map { index, x in
     (polynom.value(by: x) - yArray[index]).pow(2)
 }.sum())
 
-let inaccuracy = variance / sqrtf(Float(n))
+var inaccuracy = variance / sqrtf(Float(n))
 let error = inaccuracy / sqrtf(yArray.map { $0.pow(2) }.sum())
 var middleValues = xArray.pairs().map { polynom.value(by: ($0 + $1) / 2) }
 
@@ -191,4 +191,5 @@ print("Значения в средних точках: ", middleValues)
 variance = sqrtf(xArray.enumerated().map { index, x in
     (z4(a: alpha, b: betta, x: x) - yArray[index]).pow(2)
 }.sum())
-print("СКУ: ", variance)
+inaccuracy = variance / sqrtf(Float(n))
+print("СКУ: ", inaccuracy)
