@@ -33,8 +33,10 @@ extension Array where Element == Float {
     var minAll: (element: Float, indexes: [Int]) {
         var min: (element: Float, indexes: [Int]) = (self[0], [0])
         for i in 1..<count {
+            
             if self[i] < min.element {
                 min = (self[i], [i])
+                
             } else if self[i] == min.element {
                 min.indexes.append(i)
             }
@@ -114,7 +116,7 @@ for i in 0..<m {
 let lamda = slauSolution(matrixA: matrixA, vectorB: vectorB, size: m)
 
 let polynom = Polynom(factors: lamda)
-let variance = sqrtf(xArray.enumerated().map { index, x in
+var variance = sqrtf(xArray.enumerated().map { index, x in
     (polynom.value(by: x) - yArray[index]).pow(2)
 }.sum())
 
@@ -122,10 +124,15 @@ let inaccuracy = variance / sqrtf(Float(n))
 let error = inaccuracy / sqrtf(yArray.map { $0.pow(2) }.sum())
 var middleValues = xArray.pairs().map { polynom.value(by: ($0 + $1) / 2) }
 
-print(matrixA, vectorB)
-print(lamda)
-print(inaccuracy, error)
-print(middleValues)
+print("Мтарица A:")
+for row in matrixA {
+    print(row)
+}
+print("Вектор B: ", vectorB)
+print("Кэффициенты многочлена: ", lamda)
+print("Абсолютная погрешность: ", inaccuracy)
+print("Относительная ошибка: ", error)
+print("Значения в средних точках: ", middleValues)
 
 let middleX: (arithmetic: Float, geometric: Float, harmonic: Float) = (
     (xArray[0] + xArray[n - 1]) / 2,
@@ -159,22 +166,29 @@ guard minAll.indexes.count == 1, let funcType = minAll.indexes.first else {
     fatalError("error")
 }
 
-print(funcType + 1)
+print("Тип аппроксимирующей функции: ", "z\(funcType + 1)")
 
-func z(a: Float, b: Float, x: Float) -> Float {
+func z4(a: Float, b: Float, x: Float) -> Float {
     return a * logf(x) + b
 }
 
 let a: Float = xArray.map { logf($0).pow(2) }.sum()
 let b: Float = xArray.map { logf($0) }.sum()
 let c: Float = xArray.enumerated().map { index, elem in
-    return logf(elem) * (1 / yArray[index])
+    return logf(elem) * yArray[index]
 }.sum()
-let d: Float = yArray.map { 1 / $0 }.sum()
+let d: Float = yArray.map { $0 }.sum()
 
 let divisor: Float = b * b - a * Float(n)
-let alpha: Float = expf((d * b - c * Float(n)) / divisor)
-let betta: Float = 1 / ((c * b - a * d) / divisor)
+let alpha: Float = (d * b - c * Float(n)) / divisor
+let betta: Float = (c * b - a * d) / divisor
 
-middleValues = xArray.pairs().map { z(a: alpha, b: betta, x: ($0 + $1) / 2) }
-print(middleValues)
+print("Значения a и b: ", alpha, betta)
+
+middleValues = xArray.pairs().map { z4(a: alpha, b: betta, x: ($0 + $1) / 2) }
+print("Значения в средних точках: ", middleValues)
+
+variance = sqrtf(xArray.enumerated().map { index, x in
+    (z4(a: alpha, b: betta, x: x) - yArray[index]).pow(2)
+}.sum())
+print("СКУ: ", variance)
