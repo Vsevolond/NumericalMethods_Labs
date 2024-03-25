@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D322681C2BAB2BA1003138EC /* approximate-func.swift in Sources */ = {isa = PBXBuildFile; fileRef = D322681B2BAB2BA1003138EC /* approximate-func.swift */; };
+		D322681E2BAB2EF8003138EC /* slau.swift in Sources */ = {isa = PBXBuildFile; fileRef = D322681D2BAB2EF8003138EC /* slau.swift */; };
+		D32268202BAB3BFB003138EC /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D322681F2BAB3BFB003138EC /* extensions.swift */; };
+		D32268222BAB3C3B003138EC /* help-functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32268212BAB3C3B003138EC /* help-functions.swift */; };
+		D32268242BAB3C5E003138EC /* polynom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32268232BAB3C5E003138EC /* polynom.swift */; };
 		D33E1C3E2B98A08A0054A741 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33E1C3D2B98A08A0054A741 /* main.swift */; };
 		D37D3CD52B7A580200672227 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37D3CD42B7A580200672227 /* main.swift */; };
 		D38B9DF82B862E2500B38A99 /* matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38B9DF72B862E2500B38A99 /* matrix.swift */; };
@@ -59,6 +64,11 @@
 		D32268182BAB0F47003138EC /* lab0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab0; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab0; sourceTree = "<absolute>"; };
 		D32268192BAB0F47003138EC /* lab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab2; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab2; sourceTree = "<absolute>"; };
 		D322681A2BAB0F47003138EC /* lab3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab3; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab3; sourceTree = "<absolute>"; };
+		D322681B2BAB2BA1003138EC /* approximate-func.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "approximate-func.swift"; sourceTree = "<group>"; };
+		D322681D2BAB2EF8003138EC /* slau.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slau.swift; sourceTree = "<group>"; };
+		D322681F2BAB3BFB003138EC /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		D32268212BAB3C3B003138EC /* help-functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "help-functions.swift"; sourceTree = "<group>"; };
+		D32268232BAB3C5E003138EC /* polynom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = polynom.swift; sourceTree = "<group>"; };
 		D33E1C3D2B98A08A0054A741 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D37D3CD42B7A580200672227 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D38B9DF72B862E2500B38A99 /* matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matrix.swift; sourceTree = "<group>"; };
@@ -139,6 +149,11 @@
 			isa = PBXGroup;
 			children = (
 				D3F89C882BA1DB26001BAFE7 /* main.swift */,
+				D322681B2BAB2BA1003138EC /* approximate-func.swift */,
+				D322681D2BAB2EF8003138EC /* slau.swift */,
+				D322681F2BAB3BFB003138EC /* extensions.swift */,
+				D32268212BAB3C3B003138EC /* help-functions.swift */,
+				D32268232BAB3C5E003138EC /* polynom.swift */,
 			);
 			path = lab3;
 			sourceTree = "<group>";
@@ -294,7 +309,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D32268242BAB3C5E003138EC /* polynom.swift in Sources */,
+				D322681C2BAB2BA1003138EC /* approximate-func.swift in Sources */,
+				D322681E2BAB2EF8003138EC /* slau.swift in Sources */,
 				D3F89C892BA1DB26001BAFE7 /* main.swift in Sources */,
+				D32268222BAB3C3B003138EC /* help-functions.swift in Sources */,
+				D32268202BAB3BFB003138EC /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
