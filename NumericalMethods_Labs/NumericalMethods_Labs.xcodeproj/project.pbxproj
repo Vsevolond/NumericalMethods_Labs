@@ -17,6 +17,10 @@
 		D38B9DF82B862E2500B38A99 /* matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38B9DF72B862E2500B38A99 /* matrix.swift */; };
 		D38B9DFA2B86354700B38A99 /* spline.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38B9DF92B86354700B38A99 /* spline.swift */; };
 		D3BA83572B86286A00229FBE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BA83562B86286A00229FBE /* main.swift */; };
+		D3E5D04D2BB44CB0008FD369 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E5D04C2BB44CB0008FD369 /* main.swift */; };
+		D3E5D0522BB45B17008FD369 /* matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E5D0512BB45B17008FD369 /* matrix.swift */; };
+		D3E5D0542BB4B280008FD369 /* vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E5D0532BB4B280008FD369 /* vector.swift */; };
+		D3E5D0562BB54900008FD369 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E5D0552BB54900008FD369 /* extensions.swift */; };
 		D3F89C892BA1DB26001BAFE7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F89C882BA1DB26001BAFE7 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +52,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		D3E5D0482BB44CB0008FD369 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		D3F89C842BA1DB26001BAFE7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,20 +73,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D32268172BAB0F47003138EC /* lab1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab1; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab1; sourceTree = "<absolute>"; };
-		D32268182BAB0F47003138EC /* lab0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab0; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab0; sourceTree = "<absolute>"; };
-		D32268192BAB0F47003138EC /* lab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab2; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab2; sourceTree = "<absolute>"; };
-		D322681A2BAB0F47003138EC /* lab3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab3; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab3; sourceTree = "<absolute>"; };
 		D322681B2BAB2BA1003138EC /* approximate-func.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "approximate-func.swift"; sourceTree = "<group>"; };
 		D322681D2BAB2EF8003138EC /* slau.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slau.swift; sourceTree = "<group>"; };
 		D322681F2BAB3BFB003138EC /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		D32268212BAB3C3B003138EC /* help-functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "help-functions.swift"; sourceTree = "<group>"; };
 		D32268232BAB3C5E003138EC /* polynom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = polynom.swift; sourceTree = "<group>"; };
 		D33E1C3D2B98A08A0054A741 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D355B9612BB6C25A00371D0E /* lab1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab1; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab1; sourceTree = "<absolute>"; };
+		D355B9622BB6C25A00371D0E /* lab0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab0; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab0; sourceTree = "<absolute>"; };
+		D355B9632BB6C25A00371D0E /* lab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab2; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab2; sourceTree = "<absolute>"; };
+		D355B9642BB6C25A00371D0E /* lab3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab3; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab3; sourceTree = "<absolute>"; };
+		D355B9652BB6C25A00371D0E /* lab4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab4; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab4; sourceTree = "<absolute>"; };
 		D37D3CD42B7A580200672227 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D38B9DF72B862E2500B38A99 /* matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matrix.swift; sourceTree = "<group>"; };
 		D38B9DF92B86354700B38A99 /* spline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spline.swift; sourceTree = "<group>"; };
 		D3BA83562B86286A00229FBE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D3E5D04C2BB44CB0008FD369 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D3E5D0512BB45B17008FD369 /* matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matrix.swift; sourceTree = "<group>"; };
+		D3E5D0532BB4B280008FD369 /* vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vector.swift; sourceTree = "<group>"; };
+		D3E5D0552BB54900008FD369 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		D3F89C882BA1DB26001BAFE7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +111,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D3BA83512B86286A00229FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E5D0472BB44CB0008FD369 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -124,6 +149,7 @@
 				D37D3CD32B7A580200672227 /* lab1 */,
 				D33E1C3C2B98A08A0054A741 /* lab2 */,
 				D3F89C872BA1DB26001BAFE7 /* lab3 */,
+				D3E5D04B2BB44CB0008FD369 /* lab4 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +169,17 @@
 				D3BA83562B86286A00229FBE /* main.swift */,
 			);
 			path = lab0;
+			sourceTree = "<group>";
+		};
+		D3E5D04B2BB44CB0008FD369 /* lab4 */ = {
+			isa = PBXGroup;
+			children = (
+				D3E5D04C2BB44CB0008FD369 /* main.swift */,
+				D3E5D0512BB45B17008FD369 /* matrix.swift */,
+				D3E5D0532BB4B280008FD369 /* vector.swift */,
+				D3E5D0552BB54900008FD369 /* extensions.swift */,
+			);
+			path = lab4;
 			sourceTree = "<group>";
 		};
 		D3F89C872BA1DB26001BAFE7 /* lab3 */ = {
@@ -175,7 +212,7 @@
 			);
 			name = lab2;
 			productName = lab2;
-			productReference = D32268192BAB0F47003138EC /* lab2 */;
+			productReference = D355B9632BB6C25A00371D0E /* lab2 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D37D3CD02B7A580200672227 /* lab1 */ = {
@@ -192,7 +229,7 @@
 			);
 			name = lab1;
 			productName = lab1;
-			productReference = D32268172BAB0F47003138EC /* lab1 */;
+			productReference = D355B9612BB6C25A00371D0E /* lab1 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D3BA83532B86286A00229FBE /* lab0 */ = {
@@ -209,7 +246,24 @@
 			);
 			name = lab0;
 			productName = lab0;
-			productReference = D32268182BAB0F47003138EC /* lab0 */;
+			productReference = D355B9622BB6C25A00371D0E /* lab0 */;
+			productType = "com.apple.product-type.tool";
+		};
+		D3E5D0492BB44CB0008FD369 /* lab4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3E5D04E2BB44CB0008FD369 /* Build configuration list for PBXNativeTarget "lab4" */;
+			buildPhases = (
+				D3E5D0462BB44CB0008FD369 /* Sources */,
+				D3E5D0472BB44CB0008FD369 /* Frameworks */,
+				D3E5D0482BB44CB0008FD369 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lab4;
+			productName = lab4;
+			productReference = D355B9652BB6C25A00371D0E /* lab4 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D3F89C852BA1DB26001BAFE7 /* lab3 */ = {
@@ -228,7 +282,7 @@
 			packageProductDependencies = (
 			);
 			productName = lab3;
-			productReference = D322681A2BAB0F47003138EC /* lab3 */;
+			productReference = D355B9642BB6C25A00371D0E /* lab3 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -238,7 +292,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1520;
+				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					D33E1C3A2B98A08A0054A741 = {
@@ -249,6 +303,9 @@
 					};
 					D3BA83532B86286A00229FBE = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					D3E5D0492BB44CB0008FD369 = {
+						CreatedOnToolsVersion = 15.3;
 					};
 					D3F89C852BA1DB26001BAFE7 = {
 						CreatedOnToolsVersion = 15.2;
@@ -274,6 +331,7 @@
 				D3BA83532B86286A00229FBE /* lab0 */,
 				D33E1C3A2B98A08A0054A741 /* lab2 */,
 				D3F89C852BA1DB26001BAFE7 /* lab3 */,
+				D3E5D0492BB44CB0008FD369 /* lab4 */,
 			);
 		};
 /* End PBXProject section */
@@ -302,6 +360,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3BA83572B86286A00229FBE /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E5D0462BB44CB0008FD369 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E5D0522BB45B17008FD369 /* matrix.swift in Sources */,
+				D3E5D04D2BB44CB0008FD369 /* main.swift in Sources */,
+				D3E5D0542BB4B280008FD369 /* vector.swift in Sources */,
+				D3E5D0562BB54900008FD369 /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -779,6 +848,84 @@
 			};
 			name = Release;
 		};
+		D3E5D04F2BB44CB0008FD369 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = V57K6D8W6N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D3E5D0502BB44CB0008FD369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = V57K6D8W6N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		D3F89C8A2BA1DB26001BAFE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -944,6 +1091,15 @@
 			buildConfigurations = (
 				D3BA83582B86286A00229FBE /* Debug */,
 				D3BA83592B86286A00229FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3E5D04E2BB44CB0008FD369 /* Build configuration list for PBXNativeTarget "lab4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E5D04F2BB44CB0008FD369 /* Debug */,
+				D3E5D0502BB44CB0008FD369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
