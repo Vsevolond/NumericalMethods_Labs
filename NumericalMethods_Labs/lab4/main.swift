@@ -45,6 +45,10 @@ for i in stride(from: n - 1, through: 1, by: -1) {
     _yArray[i] = alpha[i] + betta[i] * _yArray[i + 1]
 }
 
+for i in 0...n {
+    print(xArray[i], _yArray[i], yArray[i], abs(yArray[i] - _yArray[i]))
+}
+
 _yArray -= yArray
 let inaccuracy: Float = _yArray.absolute().max
 
