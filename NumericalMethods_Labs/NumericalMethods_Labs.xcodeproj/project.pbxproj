@@ -20,6 +20,7 @@
 		D3BA83572B86286A00229FBE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BA83562B86286A00229FBE /* main.swift */; };
 		D3D7D0322BD6C69F002308FC /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7D0312BD6C69F002308FC /* extensions.swift */; };
 		D3D7D03A2BD6DEF5002308FC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7D0392BD6DEF5002308FC /* main.swift */; };
+		D3D7D03F2BD81B2F002308FC /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7D03E2BD81B2F002308FC /* extensions.swift */; };
 		D3E5D04D2BB44CB0008FD369 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E5D04C2BB44CB0008FD369 /* main.swift */; };
 		D3E5D0522BB45B17008FD369 /* matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E5D0512BB45B17008FD369 /* matrix.swift */; };
 		D3E5D0542BB4B280008FD369 /* vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E5D0532BB4B280008FD369 /* vector.swift */; };
@@ -105,15 +106,16 @@
 		D38B9DF92B86354700B38A99 /* spline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spline.swift; sourceTree = "<group>"; };
 		D3A6B3112BCACACA00B88868 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D3BA83562B86286A00229FBE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		D3D7D02B2BD6C633002308FC /* lab1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab1; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab1; sourceTree = "<absolute>"; };
-		D3D7D02C2BD6C633002308FC /* lab0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab0; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab0; sourceTree = "<absolute>"; };
-		D3D7D02D2BD6C633002308FC /* lab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab2; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab2; sourceTree = "<absolute>"; };
-		D3D7D02E2BD6C633002308FC /* lab3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab3; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab3; sourceTree = "<absolute>"; };
-		D3D7D02F2BD6C633002308FC /* lab4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab4; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab4; sourceTree = "<absolute>"; };
-		D3D7D0302BD6C633002308FC /* lab5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab5; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab5; sourceTree = "<absolute>"; };
 		D3D7D0312BD6C69F002308FC /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
-		D3D7D0372BD6DEF5002308FC /* lab6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab6; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab6; sourceTree = "<absolute>"; };
 		D3D7D0392BD6DEF5002308FC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D3D7D03E2BD81B2F002308FC /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		D3DA1BB82BD96BB30044B620 /* lab1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab1; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab1; sourceTree = "<absolute>"; };
+		D3DA1BB92BD96BB30044B620 /* lab0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab0; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab0; sourceTree = "<absolute>"; };
+		D3DA1BBA2BD96BB30044B620 /* lab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab2; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab2; sourceTree = "<absolute>"; };
+		D3DA1BBB2BD96BB30044B620 /* lab3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab3; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab3; sourceTree = "<absolute>"; };
+		D3DA1BBC2BD96BB30044B620 /* lab4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab4; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab4; sourceTree = "<absolute>"; };
+		D3DA1BBD2BD96BB30044B620 /* lab5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab5; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab5; sourceTree = "<absolute>"; };
+		D3DA1BBE2BD96BB30044B620 /* lab6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab6; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab6; sourceTree = "<absolute>"; };
 		D3E5D04C2BB44CB0008FD369 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D3E5D0512BB45B17008FD369 /* matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matrix.swift; sourceTree = "<group>"; };
 		D3E5D0532BB4B280008FD369 /* vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vector.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				D3D7D0392BD6DEF5002308FC /* main.swift */,
+				D3D7D03E2BD81B2F002308FC /* extensions.swift */,
 			);
 			path = lab6;
 			sourceTree = "<group>";
@@ -271,7 +274,7 @@
 			);
 			name = lab2;
 			productName = lab2;
-			productReference = D3D7D02D2BD6C633002308FC /* lab2 */;
+			productReference = D3DA1BBA2BD96BB30044B620 /* lab2 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D37D3CD02B7A580200672227 /* lab1 */ = {
@@ -288,7 +291,7 @@
 			);
 			name = lab1;
 			productName = lab1;
-			productReference = D3D7D02B2BD6C633002308FC /* lab1 */;
+			productReference = D3DA1BB82BD96BB30044B620 /* lab1 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D3A6B30E2BCACACA00B88868 /* lab5 */ = {
@@ -305,7 +308,7 @@
 			);
 			name = lab5;
 			productName = lab5;
-			productReference = D3D7D0302BD6C633002308FC /* lab5 */;
+			productReference = D3DA1BBD2BD96BB30044B620 /* lab5 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D3BA83532B86286A00229FBE /* lab0 */ = {
@@ -322,7 +325,7 @@
 			);
 			name = lab0;
 			productName = lab0;
-			productReference = D3D7D02C2BD6C633002308FC /* lab0 */;
+			productReference = D3DA1BB92BD96BB30044B620 /* lab0 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D3D7D0362BD6DEF5002308FC /* lab6 */ = {
@@ -339,7 +342,7 @@
 			);
 			name = lab6;
 			productName = lab6;
-			productReference = D3D7D0372BD6DEF5002308FC /* lab6 */;
+			productReference = D3DA1BBE2BD96BB30044B620 /* lab6 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D3E5D0492BB44CB0008FD369 /* lab4 */ = {
@@ -356,7 +359,7 @@
 			);
 			name = lab4;
 			productName = lab4;
-			productReference = D3D7D02F2BD6C633002308FC /* lab4 */;
+			productReference = D3DA1BBC2BD96BB30044B620 /* lab4 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D3F89C852BA1DB26001BAFE7 /* lab3 */ = {
@@ -375,7 +378,7 @@
 			packageProductDependencies = (
 			);
 			productName = lab3;
-			productReference = D3D7D02E2BD6C633002308FC /* lab3 */;
+			productReference = D3DA1BBB2BD96BB30044B620 /* lab3 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -478,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3D7D03A2BD6DEF5002308FC /* main.swift in Sources */,
+				D3D7D03F2BD81B2F002308FC /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
