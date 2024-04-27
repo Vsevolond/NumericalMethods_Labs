@@ -34,7 +34,7 @@ func gradf(_ point: (Float, Float)) -> (x: Float, y: Float) { (f_x(point), f_y(p
 
 var point: (x: Float, y: Float) = (0, 0)
 let eps: Float = 0.001
-let analytic: (x: Float, y: Float) = (-0.05, 0)
+let analytic: (x: Float, y: Float) = (-0.0500014, 0)
 
 var grad = gradf(point)
 var k: Int = 0
