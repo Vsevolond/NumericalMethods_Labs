@@ -42,8 +42,8 @@ func approximation(of point: (x: Float, y: Float),
 }
 
 var point: (last: (x: Float, y: Float), current: (x: Float, y: Float)) = (
-    (1.5, -1.5),
-    approximation(of: (1.5, -1.5), by: f, and: f_derivative)
+    (1, -1),
+    approximation(of: (1, -1), by: f, and: f_derivative)
 )
 var diff: Float { max(abs(point.current.x - point.last.x), abs(point.current.y - point.last.y)) }
 let eps: Float = 0.001
@@ -54,3 +54,4 @@ while diff >= eps {
 }
 
 print(point.current)
+print(diff)
