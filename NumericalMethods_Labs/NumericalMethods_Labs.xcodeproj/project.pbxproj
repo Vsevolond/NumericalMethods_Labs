@@ -18,9 +18,10 @@
 		D38B9DFA2B86354700B38A99 /* spline.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38B9DF92B86354700B38A99 /* spline.swift */; };
 		D3A6B3122BCACACA00B88868 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6B3112BCACACA00B88868 /* main.swift */; };
 		D3BA83572B86286A00229FBE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BA83562B86286A00229FBE /* main.swift */; };
+		D3CF69A52BDE6C5200531887 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CF69A42BDE6C5200531887 /* main.swift */; };
+		D3CF69AA2BDE6C6300531887 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CF69A92BDE6C6300531887 /* extensions.swift */; };
 		D3D7D0322BD6C69F002308FC /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7D0312BD6C69F002308FC /* extensions.swift */; };
 		D3D7D03A2BD6DEF5002308FC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7D0392BD6DEF5002308FC /* main.swift */; };
-		D3D7D03F2BD81B2F002308FC /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7D03E2BD81B2F002308FC /* extensions.swift */; };
 		D3E5D04D2BB44CB0008FD369 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E5D04C2BB44CB0008FD369 /* main.swift */; };
 		D3E5D0522BB45B17008FD369 /* matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E5D0512BB45B17008FD369 /* matrix.swift */; };
 		D3E5D0542BB4B280008FD369 /* vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E5D0532BB4B280008FD369 /* vector.swift */; };
@@ -57,6 +58,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		D3BA83522B86286A00229FBE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		D3CF69A02BDE6C5200531887 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -106,16 +116,18 @@
 		D38B9DF92B86354700B38A99 /* spline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spline.swift; sourceTree = "<group>"; };
 		D3A6B3112BCACACA00B88868 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D3BA83562B86286A00229FBE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D3CF698F2BDCEE1300531887 /* lab1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab1; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab1; sourceTree = "<absolute>"; };
+		D3CF69902BDCEE1300531887 /* lab0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab0; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab0; sourceTree = "<absolute>"; };
+		D3CF69912BDCEE1300531887 /* lab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab2; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab2; sourceTree = "<absolute>"; };
+		D3CF69922BDCEE1300531887 /* lab3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab3; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab3; sourceTree = "<absolute>"; };
+		D3CF69932BDCEE1300531887 /* lab4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab4; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab4; sourceTree = "<absolute>"; };
+		D3CF69942BDCEE1300531887 /* lab5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab5; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab5; sourceTree = "<absolute>"; };
+		D3CF69952BDCEE1300531887 /* lab6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab6; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab6; sourceTree = "<absolute>"; };
+		D3CF69A22BDE6C5200531887 /* lab6-0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "lab6-0"; path = "/Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab6-0"; sourceTree = "<absolute>"; };
+		D3CF69A42BDE6C5200531887 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D3CF69A92BDE6C6300531887 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		D3D7D0312BD6C69F002308FC /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		D3D7D0392BD6DEF5002308FC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		D3D7D03E2BD81B2F002308FC /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
-		D3DA1BB82BD96BB30044B620 /* lab1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab1; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab1; sourceTree = "<absolute>"; };
-		D3DA1BB92BD96BB30044B620 /* lab0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab0; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab0; sourceTree = "<absolute>"; };
-		D3DA1BBA2BD96BB30044B620 /* lab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab2; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab2; sourceTree = "<absolute>"; };
-		D3DA1BBB2BD96BB30044B620 /* lab3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab3; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab3; sourceTree = "<absolute>"; };
-		D3DA1BBC2BD96BB30044B620 /* lab4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab4; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab4; sourceTree = "<absolute>"; };
-		D3DA1BBD2BD96BB30044B620 /* lab5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab5; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab5; sourceTree = "<absolute>"; };
-		D3DA1BBE2BD96BB30044B620 /* lab6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab6; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab6; sourceTree = "<absolute>"; };
 		D3E5D04C2BB44CB0008FD369 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D3E5D0512BB45B17008FD369 /* matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matrix.swift; sourceTree = "<group>"; };
 		D3E5D0532BB4B280008FD369 /* vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vector.swift; sourceTree = "<group>"; };
@@ -146,6 +158,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D3BA83512B86286A00229FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3CF699F2BDE6C5200531887 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -194,6 +213,7 @@
 				D3E5D04B2BB44CB0008FD369 /* lab4 */,
 				D3A6B3102BCACACA00B88868 /* lab5 */,
 				D3D7D0382BD6DEF5002308FC /* lab6 */,
+				D3CF69A32BDE6C5200531887 /* lab6-0 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -224,11 +244,19 @@
 			path = lab0;
 			sourceTree = "<group>";
 		};
+		D3CF69A32BDE6C5200531887 /* lab6-0 */ = {
+			isa = PBXGroup;
+			children = (
+				D3CF69A42BDE6C5200531887 /* main.swift */,
+				D3CF69A92BDE6C6300531887 /* extensions.swift */,
+			);
+			path = "lab6-0";
+			sourceTree = "<group>";
+		};
 		D3D7D0382BD6DEF5002308FC /* lab6 */ = {
 			isa = PBXGroup;
 			children = (
 				D3D7D0392BD6DEF5002308FC /* main.swift */,
-				D3D7D03E2BD81B2F002308FC /* extensions.swift */,
 			);
 			path = lab6;
 			sourceTree = "<group>";
@@ -274,7 +302,7 @@
 			);
 			name = lab2;
 			productName = lab2;
-			productReference = D3DA1BBA2BD96BB30044B620 /* lab2 */;
+			productReference = D3CF69912BDCEE1300531887 /* lab2 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D37D3CD02B7A580200672227 /* lab1 */ = {
@@ -291,7 +319,7 @@
 			);
 			name = lab1;
 			productName = lab1;
-			productReference = D3DA1BB82BD96BB30044B620 /* lab1 */;
+			productReference = D3CF698F2BDCEE1300531887 /* lab1 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D3A6B30E2BCACACA00B88868 /* lab5 */ = {
@@ -308,7 +336,7 @@
 			);
 			name = lab5;
 			productName = lab5;
-			productReference = D3DA1BBD2BD96BB30044B620 /* lab5 */;
+			productReference = D3CF69942BDCEE1300531887 /* lab5 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D3BA83532B86286A00229FBE /* lab0 */ = {
@@ -325,7 +353,24 @@
 			);
 			name = lab0;
 			productName = lab0;
-			productReference = D3DA1BB92BD96BB30044B620 /* lab0 */;
+			productReference = D3CF69902BDCEE1300531887 /* lab0 */;
+			productType = "com.apple.product-type.tool";
+		};
+		D3CF69A12BDE6C5200531887 /* lab6-0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3CF69A62BDE6C5200531887 /* Build configuration list for PBXNativeTarget "lab6-0" */;
+			buildPhases = (
+				D3CF699E2BDE6C5200531887 /* Sources */,
+				D3CF699F2BDE6C5200531887 /* Frameworks */,
+				D3CF69A02BDE6C5200531887 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "lab6-0";
+			productName = "lab6-0";
+			productReference = D3CF69A22BDE6C5200531887 /* lab6-0 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D3D7D0362BD6DEF5002308FC /* lab6 */ = {
@@ -342,7 +387,7 @@
 			);
 			name = lab6;
 			productName = lab6;
-			productReference = D3DA1BBE2BD96BB30044B620 /* lab6 */;
+			productReference = D3CF69952BDCEE1300531887 /* lab6 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D3E5D0492BB44CB0008FD369 /* lab4 */ = {
@@ -359,7 +404,7 @@
 			);
 			name = lab4;
 			productName = lab4;
-			productReference = D3DA1BBC2BD96BB30044B620 /* lab4 */;
+			productReference = D3CF69932BDCEE1300531887 /* lab4 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D3F89C852BA1DB26001BAFE7 /* lab3 */ = {
@@ -378,7 +423,7 @@
 			packageProductDependencies = (
 			);
 			productName = lab3;
-			productReference = D3DA1BBB2BD96BB30044B620 /* lab3 */;
+			productReference = D3CF69922BDCEE1300531887 /* lab3 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -402,6 +447,9 @@
 					};
 					D3BA83532B86286A00229FBE = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					D3CF69A12BDE6C5200531887 = {
+						CreatedOnToolsVersion = 15.3;
 					};
 					D3D7D0362BD6DEF5002308FC = {
 						CreatedOnToolsVersion = 15.3;
@@ -436,6 +484,7 @@
 				D3E5D0492BB44CB0008FD369 /* lab4 */,
 				D3A6B30E2BCACACA00B88868 /* lab5 */,
 				D3D7D0362BD6DEF5002308FC /* lab6 */,
+				D3CF69A12BDE6C5200531887 /* lab6-0 */,
 			);
 		};
 /* End PBXProject section */
@@ -476,12 +525,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3CF699E2BDE6C5200531887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3CF69A52BDE6C5200531887 /* main.swift in Sources */,
+				D3CF69AA2BDE6C6300531887 /* extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D3D7D0332BD6DEF5002308FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D3D7D03A2BD6DEF5002308FC /* main.swift in Sources */,
-				D3D7D03F2BD81B2F002308FC /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1048,6 +1105,84 @@
 			};
 			name = Release;
 		};
+		D3CF69A72BDE6C5200531887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = V57K6D8W6N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D3CF69A82BDE6C5200531887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = V57K6D8W6N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		D3D7D03C2BD6DEF5002308FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1378,6 +1513,15 @@
 			buildConfigurations = (
 				D3BA83582B86286A00229FBE /* Debug */,
 				D3BA83592B86286A00229FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3CF69A62BDE6C5200531887 /* Build configuration list for PBXNativeTarget "lab6-0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3CF69A72BDE6C5200531887 /* Debug */,
+				D3CF69A82BDE6C5200531887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
