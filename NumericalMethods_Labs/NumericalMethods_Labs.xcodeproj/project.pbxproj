@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D31D449E2BF4E9CD0010E12C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31D449D2BF4E9CD0010E12C /* main.swift */; };
 		D322681C2BAB2BA1003138EC /* approximate-func.swift in Sources */ = {isa = PBXBuildFile; fileRef = D322681B2BAB2BA1003138EC /* approximate-func.swift */; };
 		D322681E2BAB2EF8003138EC /* slau.swift in Sources */ = {isa = PBXBuildFile; fileRef = D322681D2BAB2EF8003138EC /* slau.swift */; };
 		D32268202BAB3BFB003138EC /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D322681F2BAB3BFB003138EC /* extensions.swift */; };
@@ -30,6 +31,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D31D44992BF4E9CD0010E12C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		D33E1C392B98A08A0054A741 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -105,6 +115,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D31368672BF6862700B0F168 /* lab1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab1; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab1; sourceTree = "<absolute>"; };
+		D31368682BF6862700B0F168 /* lab0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab0; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab0; sourceTree = "<absolute>"; };
+		D31368692BF6862700B0F168 /* lab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab2; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab2; sourceTree = "<absolute>"; };
+		D313686A2BF6862700B0F168 /* lab3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab3; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab3; sourceTree = "<absolute>"; };
+		D313686B2BF6862700B0F168 /* lab4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab4; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab4; sourceTree = "<absolute>"; };
+		D313686C2BF6862700B0F168 /* lab5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab5; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab5; sourceTree = "<absolute>"; };
+		D313686D2BF6862700B0F168 /* lab6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab6; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab6; sourceTree = "<absolute>"; };
+		D313686E2BF6862700B0F168 /* lab6-0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "lab6-0"; path = "/Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab6-0"; sourceTree = "<absolute>"; };
+		D313686F2BF6862700B0F168 /* lab7 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab7; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab7; sourceTree = "<absolute>"; };
+		D31D449D2BF4E9CD0010E12C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D322681B2BAB2BA1003138EC /* approximate-func.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "approximate-func.swift"; sourceTree = "<group>"; };
 		D322681D2BAB2EF8003138EC /* slau.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slau.swift; sourceTree = "<group>"; };
 		D322681F2BAB3BFB003138EC /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
@@ -116,14 +136,6 @@
 		D38B9DF92B86354700B38A99 /* spline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spline.swift; sourceTree = "<group>"; };
 		D3A6B3112BCACACA00B88868 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D3BA83562B86286A00229FBE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		D3CF698F2BDCEE1300531887 /* lab1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab1; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab1; sourceTree = "<absolute>"; };
-		D3CF69902BDCEE1300531887 /* lab0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab0; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab0; sourceTree = "<absolute>"; };
-		D3CF69912BDCEE1300531887 /* lab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab2; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab2; sourceTree = "<absolute>"; };
-		D3CF69922BDCEE1300531887 /* lab3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab3; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab3; sourceTree = "<absolute>"; };
-		D3CF69932BDCEE1300531887 /* lab4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab4; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab4; sourceTree = "<absolute>"; };
-		D3CF69942BDCEE1300531887 /* lab5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab5; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab5; sourceTree = "<absolute>"; };
-		D3CF69952BDCEE1300531887 /* lab6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = lab6; path = /Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab6; sourceTree = "<absolute>"; };
-		D3CF69A22BDE6C5200531887 /* lab6-0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "lab6-0"; path = "/Users/vsevolond/UNIVERSITY/NumericalMethods_Labs/NumericalMethods_Labs/build/Debug/lab6-0"; sourceTree = "<absolute>"; };
 		D3CF69A42BDE6C5200531887 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D3CF69A92BDE6C6300531887 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		D3D7D0312BD6C69F002308FC /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
@@ -136,6 +148,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D31D44982BF4E9CD0010E12C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D33E1C382B98A08A0054A741 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,6 +214,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D31D449C2BF4E9CD0010E12C /* lab7 */ = {
+			isa = PBXGroup;
+			children = (
+				D31D449D2BF4E9CD0010E12C /* main.swift */,
+			);
+			path = lab7;
+			sourceTree = "<group>";
+		};
 		D33E1C3C2B98A08A0054A741 /* lab2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +241,7 @@
 				D3A6B3102BCACACA00B88868 /* lab5 */,
 				D3D7D0382BD6DEF5002308FC /* lab6 */,
 				D3CF69A32BDE6C5200531887 /* lab6-0 */,
+				D31D449C2BF4E9CD0010E12C /* lab7 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -288,6 +316,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D31D449A2BF4E9CD0010E12C /* lab7 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D31D449F2BF4E9CD0010E12C /* Build configuration list for PBXNativeTarget "lab7" */;
+			buildPhases = (
+				D31D44972BF4E9CD0010E12C /* Sources */,
+				D31D44982BF4E9CD0010E12C /* Frameworks */,
+				D31D44992BF4E9CD0010E12C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lab7;
+			productName = lab7;
+			productReference = D313686F2BF6862700B0F168 /* lab7 */;
+			productType = "com.apple.product-type.tool";
+		};
 		D33E1C3A2B98A08A0054A741 /* lab2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D33E1C412B98A08A0054A741 /* Build configuration list for PBXNativeTarget "lab2" */;
@@ -302,7 +347,7 @@
 			);
 			name = lab2;
 			productName = lab2;
-			productReference = D3CF69912BDCEE1300531887 /* lab2 */;
+			productReference = D31368692BF6862700B0F168 /* lab2 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D37D3CD02B7A580200672227 /* lab1 */ = {
@@ -319,7 +364,7 @@
 			);
 			name = lab1;
 			productName = lab1;
-			productReference = D3CF698F2BDCEE1300531887 /* lab1 */;
+			productReference = D31368672BF6862700B0F168 /* lab1 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D3A6B30E2BCACACA00B88868 /* lab5 */ = {
@@ -336,7 +381,7 @@
 			);
 			name = lab5;
 			productName = lab5;
-			productReference = D3CF69942BDCEE1300531887 /* lab5 */;
+			productReference = D313686C2BF6862700B0F168 /* lab5 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D3BA83532B86286A00229FBE /* lab0 */ = {
@@ -353,7 +398,7 @@
 			);
 			name = lab0;
 			productName = lab0;
-			productReference = D3CF69902BDCEE1300531887 /* lab0 */;
+			productReference = D31368682BF6862700B0F168 /* lab0 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D3CF69A12BDE6C5200531887 /* lab6-0 */ = {
@@ -370,7 +415,7 @@
 			);
 			name = "lab6-0";
 			productName = "lab6-0";
-			productReference = D3CF69A22BDE6C5200531887 /* lab6-0 */;
+			productReference = D313686E2BF6862700B0F168 /* lab6-0 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D3D7D0362BD6DEF5002308FC /* lab6 */ = {
@@ -387,7 +432,7 @@
 			);
 			name = lab6;
 			productName = lab6;
-			productReference = D3CF69952BDCEE1300531887 /* lab6 */;
+			productReference = D313686D2BF6862700B0F168 /* lab6 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D3E5D0492BB44CB0008FD369 /* lab4 */ = {
@@ -404,7 +449,7 @@
 			);
 			name = lab4;
 			productName = lab4;
-			productReference = D3CF69932BDCEE1300531887 /* lab4 */;
+			productReference = D313686B2BF6862700B0F168 /* lab4 */;
 			productType = "com.apple.product-type.tool";
 		};
 		D3F89C852BA1DB26001BAFE7 /* lab3 */ = {
@@ -423,7 +468,7 @@
 			packageProductDependencies = (
 			);
 			productName = lab3;
-			productReference = D3CF69922BDCEE1300531887 /* lab3 */;
+			productReference = D313686A2BF6862700B0F168 /* lab3 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -436,6 +481,9 @@
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					D31D449A2BF4E9CD0010E12C = {
+						CreatedOnToolsVersion = 15.3;
+					};
 					D33E1C3A2B98A08A0054A741 = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -485,11 +533,20 @@
 				D3A6B30E2BCACACA00B88868 /* lab5 */,
 				D3D7D0362BD6DEF5002308FC /* lab6 */,
 				D3CF69A12BDE6C5200531887 /* lab6-0 */,
+				D31D449A2BF4E9CD0010E12C /* lab7 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D31D44972BF4E9CD0010E12C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31D449E2BF4E9CD0010E12C /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D33E1C372B98A08A0054A741 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -569,6 +626,84 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		D31D44A02BF4E9CD0010E12C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = V57K6D8W6N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D31D44A12BF4E9CD0010E12C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = V57K6D8W6N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		D33E1C3F2B98A08A0054A741 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1472,6 +1607,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D31D449F2BF4E9CD0010E12C /* Build configuration list for PBXNativeTarget "lab7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D31D44A02BF4E9CD0010E12C /* Debug */,
+				D31D44A12BF4E9CD0010E12C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D33E1C412B98A08A0054A741 /* Build configuration list for PBXNativeTarget "lab2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

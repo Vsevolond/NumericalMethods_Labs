@@ -1,7 +1,7 @@
 import Foundation
 
-func f1(_ point: (x: Float, y: Float)) -> Float { sinf(point.x + 2) - point.y - 1.5 }
-func f2(_ point: (x: Float, y: Float)) -> Float { point.x + cosf(point.y - 2) - 0.5 }
+func f1(_ point: (x: Float, y: Float)) -> Float { sinf(point.x + 2) - point.y - 1.5 } // sin(x + 2) - y = 1.5
+func f2(_ point: (x: Float, y: Float)) -> Float { point.x + cosf(point.y - 2) - 0.5 } // x + cos(y - 2) = 0.5
 
 func f1_x(_ point: (x: Float, y: Float)) -> Float { cosf(point.x + 2) }
 func f1_y(_ point: (x: Float, y: Float)) -> Float { -1 }
