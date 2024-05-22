@@ -40,7 +40,7 @@ func fft(_ input: [Complex]) -> [Complex] {
     return result
 }
 
-func ifft(_ input: [Complex]) -> [Complex] {
+func inverse_fft(_ input: [Complex]) -> [Complex] {
     let conjugated = input.map { Complex($0.real, -$0.image) }
     let transformed = fft(conjugated)
     let scaled = transformed.map { Complex($0.real / Float(input.count), -$0.image / Float(input.count)) }
@@ -60,7 +60,7 @@ func interpolatedFunction(input: [Float], numberOfPoints: Int) -> (Float) -> Flo
         extended[numberOfPoints - n/2 + i] = fft[n/2 + i]
     }
     
-    let interpolated = ifft(extended)
+    let interpolated = inverse_fft(extended)
     
     return { x in
         let wrappedX = x.truncatingRemainder(dividingBy: 1.0)
