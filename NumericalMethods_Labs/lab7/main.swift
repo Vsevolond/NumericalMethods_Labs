@@ -2,35 +2,36 @@ import Foundation
 
 struct Complex {
     var real: Float
-    var imag: Float
+    var image: Float
     
-    init(_ real: Float, _ imag: Float) {
+    init(_ real: Float, _ image: Float) {
         self.real = real
-        self.imag = imag
+        self.image = image
     }
     
     static func + (lhs: Complex, rhs: Complex) -> Complex {
-        return Complex(lhs.real + rhs.real, lhs.imag + rhs.imag)
+        return Complex(lhs.real + rhs.real, lhs.image + rhs.image)
     }
     
     static func - (lhs: Complex, rhs: Complex) -> Complex {
-        return Complex(lhs.real - rhs.real, lhs.imag - rhs.imag)
+        return Complex(lhs.real - rhs.real, lhs.image - rhs.image)
     }
     
     static func * (lhs: Complex, rhs: Complex) -> Complex {
-        return Complex(lhs.real * rhs.real - lhs.imag * rhs.imag, lhs.real * rhs.imag + lhs.imag * rhs.real)
+        return Complex(lhs.real * rhs.real - lhs.image * rhs.image, lhs.real * rhs.image + lhs.image * rhs.real)
     }
 }
 
 func fft(_ input: [Complex]) -> [Complex] {
+    guard input.count > 1 else { return input }
     let n = input.count
-    guard n > 1 else { return input }
     
     let even = fft(Array(input.enumerated().compactMap { $0.offset % 2 == 0 ? $0.element : nil }))
     let odd = fft(Array(input.enumerated().compactMap { $0.offset % 2 != 0 ? $0.element : nil }))
     
     var result = [Complex](repeating: Complex(0, 0), count: n)
     let angle = -2.0 * Float.pi / Float(n)
+    
     for k in 0..<n/2 {
         let t = Complex(cosf(angle * Float(k)), sinf(angle * Float(k))) * odd[k]
         result[k] = even[k] + t
@@ -40,9 +41,10 @@ func fft(_ input: [Complex]) -> [Complex] {
 }
 
 func ifft(_ input: [Complex]) -> [Complex] {
-    let conjugated = input.map { Complex($0.real, -$0.imag) }
+    let conjugated = input.map { Complex($0.real, -$0.image) }
     let transformed = fft(conjugated)
-    let scaled = transformed.map { Complex($0.real / Float(input.count), -$0.imag / Float(input.count)) }
+    let scaled = transformed.map { Complex($0.real / Float(input.count), -$0.image / Float(input.count)) }
+    
     return scaled
 }
 
@@ -50,20 +52,20 @@ func interpolatedFunction(input: [Float], numberOfPoints: Int) -> (Float) -> Flo
     let n = input.count
     let complexInput = input.map { Complex($0, 0) }
     
-    let fftResult = fft(complexInput)
+    let fft = fft(complexInput)
     
-    var extendedFFT = [Complex](repeating: Complex(0, 0), count: numberOfPoints)
+    var extended = [Complex](repeating: Complex(0, 0), count: numberOfPoints)
     for i in 0..<n/2 {
-        extendedFFT[i] = fftResult[i]
-        extendedFFT[numberOfPoints - n/2 + i] = fftResult[n/2 + i]
+        extended[i] = fft[i]
+        extended[numberOfPoints - n/2 + i] = fft[n/2 + i]
     }
     
-    let interpolatedComplex = ifft(extendedFFT)
+    let interpolated = ifft(extended)
     
     return { x in
         let wrappedX = x.truncatingRemainder(dividingBy: 1.0)
         let index = Int(wrappedX * Float(numberOfPoints)) % numberOfPoints
-        return interpolatedComplex[index].real
+        return interpolated[index].real
     }
 }
 
