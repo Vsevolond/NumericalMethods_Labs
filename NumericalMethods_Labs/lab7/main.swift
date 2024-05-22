@@ -76,8 +76,12 @@ let inputFunctionValues = (0..<N).map { f(Float($0) / Float(N)) }
 
 let interpFunc = interpolatedFunction(input: inputFunctionValues, numberOfPoints: N)
 
-let functionMiddleValues = (0..<N).map { f((Float($0) + 0.5) / Float(N)) }
-let interpMiddleValues = (0..<N).map { interpFunc((Float($0) + 0.5) / Float(N)) }
+let middleValues = (0..<N).map { (Float($0) + 0.5) / Float(N) }
+let functionMiddleValues = middleValues.map { f($0) }
+let interpMiddleValues = middleValues.map { interpFunc($0) }
 
 let inaccuracy = functionMiddleValues.enumerated().map { abs($1 - interpMiddleValues[$0]) }
 print(inaccuracy.max() ?? .nan)
+
+print(f(0.6))
+print(interpFunc(0.6))
